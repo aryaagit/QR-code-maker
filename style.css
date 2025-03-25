@@ -1,0 +1,166 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #1a1a2e, #16213e);
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Main Wrapper */
+.wrapper {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    backdrop-filter: blur(15px);
+    transition: 0.3s ease-in-out;
+    max-width: 350px;
+}
+
+.wrapper:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 35px rgba(0, 255, 255, 0.6);
+}
+
+/* Heading */
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px cyan, 0 0 20px cyan;
+    }
+    to {
+        text-shadow: 0 0 15px cyan, 0 0 30px cyan;
+    }
+}
+
+/* Input Section */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+#textInput {
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    border: none;
+    text-align: center;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    transition: 0.3s ease-in-out;
+}
+
+#textInput:focus {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 20px cyan;
+}
+
+/* Microphone Button */
+#micBtn {
+    border: none;
+    background: #00e6e6;
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 15px rgba(0, 230, 230, 0.6);
+}
+
+#micBtn:hover {
+    background: #00c8c8;
+    box-shadow: 0 0 25px cyan;
+}
+
+/* Generate Button */
+#btn {
+    margin-top: 15px;
+    padding: 14px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    border-radius: 12px;
+    background: linear-gradient(90deg, #00f0ff, #0077ff);
+    color: white;
+    transition: 0.3s ease-in-out;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.6);
+    font-weight: bold;
+}
+
+#btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px cyan;
+    background: linear-gradient(90deg, #0077ff, #00f0ff);
+}
+
+/* QR Code Container */
+#qrContainer {
+    display: none;
+    margin-top: 20px;
+    position: relative;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#qrCode {
+    width: 180px;
+    height: 180px;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    box-shadow: 0 0 15px cyan;
+}
+
+/* Download Button */
+#downloadqrCode {
+    margin: 15px auto;
+    padding: 12px 18px;
+    border: none;
+    background: linear-gradient(90deg, #ff00ff, #ff0077);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.3s;
+    box-shadow: 0 0 20px rgba(255, 0, 255, 0.5);
+    font-weight: bold;
+}
+
+#downloadqrCode:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 25px magenta;
+    background: linear-gradient(90deg, #ff0077, #ff00ff);
+}

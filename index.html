@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>QR Code Generator</h1>
+        <div class="container">
+            <div class="input-wrapper">
+                <input type="text" id="textInput" placeholder="Enter text or URL">
+                <button id="micBtn"><i class='bx bxs-microphone'></i></button>
+            </div>
+            <button id="btn">Generate QR Code</button>
+        </div>
+        <div id="qrContainer">
+            <img id="qrCode" src="" alt="QR Code">
+            <button id="downloadqrCode" onclick=""><i class='bx bxs-download'></i> Download</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
